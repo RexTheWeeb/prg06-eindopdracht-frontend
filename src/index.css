@@ -1,1 +1,154 @@
-@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+    line-height: 1.5;
+}
+
+
+header {
+    background-color: #1e1e2f;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+
+.App h2 {
+    margin-bottom: 1rem;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.game-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+.game-list li {
+    background: white;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.2s ease;
+}
+
+.game-list li:hover {
+    background-color: #f0f2f8;
+}
+
+.game-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.game-details {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.game-details h2 {
+    margin-top: 0;
+}
+
+.game-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+.game-form {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.game-form h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.game-form input {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.game-form button {
+    background-color: #1e1e2f;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.game-form button:hover {
+    background-color: #34345c;
+}
+
+
+.error {
+    color: #b00020;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+.delete-button {
+    background-color: #b00020;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
